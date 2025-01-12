@@ -1,0 +1,295 @@
+  <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books page </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js" defer></script>
+   
+   
+
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Books page </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home page</a></li>
+                <li><a href="About Us.html">About Us </a></li>
+                <li><a href="books.html">Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <table id = "booksTable" border="1" style="width: 100%; border-collapse: collapse; text-align: center;">
+            <thead>
+                <tr>
+                    <th>رمز الكتاب ISBN</th>
+                    <th>العنوان</th>
+                    <th>السعر</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="isbnBook1">978-9770916738</td>
+                    <td id = "nameBook1">الليل وفلا</td>
+                    <td id = "priceBook1">25000 ل.س</td>
+                <td><input type="checkbox" class="details-checkbox" data-id="1"></td>
+                
+                    <td ><input type="radio" value = "1" id = "radOne" name="bookChoice"></td>
+                </tr> 
+                <tr class="details-row" data-id="1">
+                <td colspan="5">
+                    <div>
+                        <p> الناشر: دار الشروق</p>
+                        <p>تصنيف الكتاب: رواية اجتماعية</p>
+                        <p>ملخص :تدور الرواية حول قضايا الانسان والصراع النفسي الذي يعيشه بين الطموحات والقيود المجتمعية. تنقل أحداثها بين الريف والمدينة، وتناقش أثر الحب والخيانة على حياة الأفراد. </p>
+                    <p>اهم ثلاث قصص قصة الصراع بين الواجب العائلي والطموحات الشخصية. قصة الحب الذي تحول إلى خيانة ومأساة. قصة التحدي بين الأجيال المختلفة</p>
+                        <img src="images\الليل وفلا.jpg" alt="صورة الكتاب" class="book-image">
+
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                    <td id ="isbnBook2">978-9953891718</td>
+                    <td  id = "nameBook2">موسم الهجرة إلى الشمال</td>
+                    <td id ="priceBook2">12000 ل.س</td>
+                    <td><input type="checkbox" class="details-checkbox" data-id="2"></td>
+                    <td><input type="radio" value = "2" name="bookChoice" ></td>
+                
+                </tr>
+                <tr class="details-row" data-id="2">
+                    <td colspan="5">
+                        <div>
+                            <p>الناشر: دار العودة</p>
+                            <p>تصنيف الكتاب: رواية أدبية</p>
+                            <p>ملخص:
+                                رواية للكاتب السوداني الطيب صالح، تناقش صراع الحضارات بين الشرق والغرب من خلال بطلها مصطفى سعيد، الذي يتنقل بين السودان وبريطانيا</p>
+                      <p>أهم ثلاث قصص:
+                        قصة مصطفى سعيد في لندن وعلاقاته المعقدة.
+                        قصة القرية السودانية التي نشأ فيها مصطفى.
+                        قصة بطل الرواية الآخر الذي يبحث عن ذاته بين العالمين.</p>
+                        <img src="images\موسم الهجرة الى الشمال .jpg" alt="صورة الكتاب" class="book-image">
+   
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id ="isbnBook3">978-9953451080</td>
+                    <td id="nameBook3">الخبز الحافي </td>
+                    <td id="priceBook3">10000 ل.س</td>
+                    <td><input type="checkbox" class="details-checkbox" data-id="3"></td>
+                    <td><input type="radio" value = "3" name="bookChoice"></td>
+                </tr>
+                <tr class="details-row" data-id="3">
+                    <td colspan="5">
+                        <div>
+                            <p>الناشر: دار الهلال</p>
+                            <p>تصنيف الكتاب: رواية اجتماعية فلسفية</p>
+                            <p>ملخص:
+                                يستعرض الكتاب معاناة البشر مع الفقر، وكيف يشكل الخبز رمزية للحياة والعمل. يناقش الطبقية الاجتماعية وتأثيرها على أحلام الإنسان</p>
+                            <p>أهم ثلاث قصص:
+                                قصة عامل المخبز الذي يحلم بحياة أفضل.
+                                قصة الأم التي تكافح لإطعام أطفالها.
+                                قصة شاب يتمرد على الواقع من أجل تحقيق ذاته</p>
+                                <img src="images\الخبز الحافي.jpg" alt="صورة الكتاب" class="book-image">
+
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="isbnBook4">978-9953682926</td>
+                    <td id="nameBook4">رجال في الشمس</td>
+                    <td id="priceBook4">15000 ل.س</td>
+                    <td><input type="checkbox" class="details-checkbox" data-id="4"></td>
+                    <td><input type="radio" value="4" name="bookChoice"></td>
+                </tr>
+                <tr class="details-row" data-id="4">
+                    <td colspan="5">
+                        <div>
+                            <p>الناشر: دار الطليعة</p>
+                            <p>تصنيف الكتاب: رواية سياسية</p>
+                            <p>ملخص:
+                                رواية غسان كنفاني تسلط الضوء على القضية الفلسطينية من خلال رحلة تهريب مجموعة من الفلسطينيين إلى الكويت داخل صهريج ماء.</p>
+                            <p>أهم ثلاث قصص:
+                                قصة أبو قيس وصراعه لتحقيق حياة كريمة.
+                                قصة أسعد الشاب الذي يحلم بالخروج من المخيم.
+                                قصة مروان الذي يقرر المخاطرة من أجل عائلته.</p>
+                                <img src="images\رجال في الشمس .jpg" alt="صورة الكتاب" class="book-image">
+
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="isbnBook5">978-0007488658</td>
+                    <td id="nameBook5">العجوز والبحر</td>
+                    <td id="priceBook5">20000 ل.س</td>
+                    <td><input type="checkbox" class="details-checkbox" data-id="5"></td>
+                    <td><input type="radio" value="5" name="bookChoice"></td>
+                </tr>
+                <tr class="details-row" data-id="5">
+                    <td colspan="5">
+                        <div>
+                            <p>الناشر: دار المدى</p>
+                            <p>تصنيف الكتاب: رواية قصيرة فلسفية</p>
+                            <p>ملخص:
+                                رواية إرنست هيمنغواي عن صياد عجوز يكافح من أجل اصطياد سمكة كبيرة وسط البحر، تعبر عن الصراع مع الذات والطبيعة.</p>
+                            <p>أهم ثلاث قصص:
+                                صراع الصياد مع السمكة العملاقة.
+                                علاقته بالصبي الذي يعينه في حياته اليومية.
+                                رحلته الشاقة للعودة بالسمكة وما يحدث خلالها.
+                                </p>
+                                <img src="images\العجوز والبحر.jpg" alt="صورة الكتاب" class="book-image">
+
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="isbnBook6">978-0061122415</td>
+                    <td id="nameBook6">أن تقتل طائراً بريئاً</td>
+                    <td id="priceBook6">19000 ل.س</td>
+                    <td><input type="checkbox" class="details-checkbox" data-id="6"></td>
+                    <td><input type="radio" value="6" name="bookChoice"></td>
+                </tr>
+                <tr class="details-row" data-id="6">
+                    <td colspan="5">
+                        <div>
+                            <p>الناشر: هاربر كولينز</p>
+                            <p>تصنيف الكتاب: رواية أدبية</p>
+                            <p>ملخص:
+                                تناقش الرواية قضايا العنصرية والعدالة في الولايات المتحدة من خلال قصة محامٍ يدافع عن رجل أسود متهم ظلماً.</p>
+                            <p>أهم ثلاث قصص:
+                                قضية الدفاع عن الرجل الأسود.
+                                حياة الطفولة لبطلة الرواية الصغيرة.
+                                الصراع المجتمعي الذي يدور حول العنصرية.</p>
+                                <img src="images\أن تقتل طائراً بريئاً.jpg" alt="صورة الكتاب" class="book-image">
+
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="isbnBook7">978-9953896959</td>
+                    <td id="nameBook7">ثلاثية نجيب محفوظ</td>
+                    <td id="priceBook7">30000 ل.س</td>
+                    <td><input type="checkbox" class="details-checkbox" data-id="7"></td>
+                    <td><input type="radio" value="7" name="bookChoice"></td>
+                </tr>
+                <tr class="details-row" data-id="7">
+                    <td colspan="5">
+                        <div>
+                            <p>الناشر: مكتبة مصر</p>
+                            <p>تصنيف الكتاب: رواية اجتماعية تاريخية</p>
+                            <p>ملخص:
+                                ثلاثية أدبية تسرد حياة أسرة مصرية في فترة التحولات الاجتماعية والسياسية خلال القرن العشرين.</p>
+                            <p>أهم ثلاث قصص:
+                                قصة السيد أحمد عبد الجواد وعائلته.
+                                قصة كفاح الأبناء ضد السلطة الأبوية.
+                                التحولات التي عاشتها مصر في ظل الاحتلال</p>
+                                <img src="images\ثلاثية نجيب محفوظ.jpg" alt="صورة الكتاب" class="book-image">
+
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="isbnBook8">978-0192835826</td>
+                    <td id="nameBook8">الأمير الصغير</td>
+                    <td id="priceBook8">14000 ل.س</td>
+                    <td><input type="checkbox" class="details-checkbox" data-id="8"></td>
+                    <td><input type="radio" value="8" name="bookChoice"></td>
+                </tr>
+                <tr class="details-row" data-id="8">
+                    <td colspan="5">
+                        <div>
+                            <p >الناشر: غاليمار</p>
+                            <p>تصنيف الكتاب: رواية فلسفية للأطفال</p>
+                            <p>ملخص:
+                                رواية أنطوان دي سانت إكزوبيري تحكي عن طفل صغير يسافر بين الكواكب، تتناول قضايا الحياة والإنسانية برؤية عميقة.</p>
+                            <p>أهم ثلاث قصص:
+                                لقاء الأمير الصغير مع الطيار.
+                                رحلته إلى كواكب مختلفة واللقاءات مع سكانها.
+                                لقاء الأمير مع الثعلب وتعلمه معنى الحب.</p>
+                                <img src="images\الأمير الصغير.jpg" alt="صورة الكتاب" class="book-image">
+                            </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="isbnBook9">978-9992171232</td>
+                    <td id="nameBook9">زمن الحب الآخر</td>
+                    <td id="priceBook9">13000 ل.س</td>
+                    <td><input type="checkbox" class="details-checkbox" data-id="9"></td>
+                    <td><input type="radio" value="9" name="bookChoice"></td>
+                </tr>
+                <tr class="details-row" data-id="9">
+                    <td colspan="5">
+                        <div>
+                            <p>الناشر: دار الآداب</p>
+                            <p>تصنيف الكتاب: رواية رومانسية</p>
+                            <p>ملخص:
+                                تدور الرواية حول الحب غير المكتمل، والصراعات التي يواجهها الأبطال بين القلب والعقل في مجتمعات تقليدية.</p>
+                            <p>أهم ثلاث قصص:
+                                قصة حب ينهار بسبب اختلاف الطبقات.
+                                قصة التضحية من أجل العائلة.
+                                رحلة البحث عن الحب الحقيقي.
+                                </p>
+                                <img src="images\زمن الحب الآخر.jpg" alt="صورة الكتاب" class="book-image">
+
+                            </div>
+                    </td>
+                </tr>
+			
+            </tbody>
+        </table>
+    </main>
+
+    <div class = "inputFormBody">
+        <h1 class= inputTitle>نموذج طلب كتاب</h1>
+        <form id="bookForm">
+          <label class = "Inputlabels" for="fullName">الاسم الكامل:</label>
+          <input type="text" id="fullName" name="fullName"  pattern="^[\u0600-\u06FF\s]+$" title="يرجى إدخال أحرف عربية فقط"><br><br>
+      
+          <label class = "Inputlabels" for="idNumber">الرقم الوطني:</label>
+          <input type="text" id="idNumber" name="idNumber" required pattern="^\d{11}$" title="الرقم الوطني يجب أن يتكون من 11 رقمًا"><br><br>
+      
+          <label class = "Inputlabels" for="birthDate">تاريخ الولادة:</label>
+          <input type="date" id="birthDate" name="birthDate" ><br><br>
+      
+          <label class = "Inputlabels" for="mobileNumber">رقم الموبايل:</label>
+          <input type="text" id="mobileNumber" name="mobileNumber" title="يرجى إدخال رقم موبايل صحيح (+9639XXXXXXXX)"><br><br>
+      
+          <label class = "Inputlabels"  for="email">البريد الإلكتروني:</label>
+          <input type="email" id="email" name="email"><br><br>
+      
+          <button class="btnSubmit" type="submit" id="submitButton">إرسال</button>
+       
+        </form>
+      </div>
+      
+   
+
+	<button  class="btnContinueToFrmBook" id= "btnloadForm" onclick="loadPage()">متابعة </button>
+  
+	
+ 
+    <iframe id = "embedInputForm" class ="embedInputForm" src=""   type="text/html"></iframe> 
+    
+    </div>
+  
+
+   
+
+    <footer>
+        <p>&copy; 2024 مكتبة الكتب. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="myFunctions.js" defer></script>
+   
+    </body>
+
+</html>

@@ -1,0 +1,175 @@
+
+/* تنسيق عام */
+html{
+    
+    background-color:#ddd;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+   
+
+   
+}
+
+/* تنسيق الـ Header */
+header {
+    background-color: #0a5b96;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* تنسيق الجدول */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #074c7d;
+    color: #fff;
+}
+/* 
+tr:nth-child(even) {
+    background-color: #c0bcbc;
+} */
+table tbody tr:hover {
+    background-color: #e5f1fe;
+} 
+/* تنسيق الـ Footer */
+footer {
+    text-align: center;
+    padding: 2px;
+    background-color: #0a5b96;
+    color: white;
+    /*margin-top: 10px;*/
+}
+  .details-row {
+            display: none;
+            background-color: #f9f9f9;
+            text-align: left;
+        }
+        .details-row td {
+            padding: 10px;
+        }
+
+
+
+         /* input form's design */
+        body.inputFormBody {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            direction: rtl;
+            overflow: hidden;
+            
+          }
+          
+          h1.inputTitle {
+            text-align: center;
+            color: #333;
+          }
+          
+          #bookForm {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: auto;
+          }
+          
+           label.inputLabel {
+            display: block;
+            margin-bottom: 5px;
+          }
+          
+          input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+          
+           button.btnContinueToFrmBook{
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 75px;
+            height: 45px;
+          
+          }
+          
+          button.btnContinueToFrmBook:hover {
+            background-color:green;
+          }
+          
+
+          button.btnSubmit
+          {
+            cursor: pointer;
+            background-color:#ddd;
+             width: 60px;
+            height: 30px;
+            
+
+          }
+          button.btnSubmit:hover {
+            background-color:cadetblue;
+          }
+          
+        iframe.embedInputForm
+        {
+               
+               
+                 width:100%;
+                 border: none;
+                
+        }
+            div.inputFormBody
+            {display:none;
+             background-color:aliceblue;
+        }
